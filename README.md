@@ -7,9 +7,9 @@
   Add your open source license, GitHub uses MIT license.
 -->
 
-# GitHub Pages
+# A Linguist's Obsidian Setup
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+_Here are the css snippets and the templates I use in Obsidian, as a linguist._
 
 </header>
 
