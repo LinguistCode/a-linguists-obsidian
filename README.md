@@ -13,30 +13,51 @@ _Here are the css snippets and the templates I use in Obsidian, as a linguist._
 
 </header>
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+## Workflow
 
-## Step 1: Enable GitHub Pages
+In order to make use of the snippets and templates, you need to know about my setup.
 
-_Welcome to GitHub Pages and Jekyll :tada:!_
+### Obsidian
 
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
+My whole work setup revolves around [Obsidian](https://obsidian.md/).  I use a variety of plugins but the following are central:
+- Calendar
+- Commander
+- Dataview
+- Folder Note (Lost Paul)
+- Hover Editor
+- Interlinear Glossing
+- Kanban
+- List Callouts
+- Pandoc Plugin
+- Pandoc Reference List
+- Tag Wrangler
+- Tasks
+- Telegram Sync
+- Templater
+- Zotero Integration
 
-### :keyboard: Activity: Enable GitHub Pages
+### Zotero
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
+I use Zotero for all of my reading. I annotate everything I read in Zotero and then I import the annotations into Obsidian. I use a few plugin with Zotero :
+
+- BetterBibTex
+- DOI Manager
+- Scite Zotero Plugin
+- Zotero OCR
+- Zotero Reading List
+
+### Telegram 
+
+On top of messaging, I use the telegram app on my phone to send notes directly to my Obsidian Vault
+
+
+## Obsidian CSS Snippets
+
+- Litnotes -> Styling options for my literature notes, to format what I bring from Zotero 
+
+
+
+
 
 <footer>
 
