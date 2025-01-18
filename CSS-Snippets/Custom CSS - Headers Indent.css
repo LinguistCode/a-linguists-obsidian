@@ -1,4 +1,6 @@
 /* Retrait progressif des titres dans la vue de prévisualisation. S'active avec CSSCLASS: indentheaders */
+/* Made by: LinguistCode on github.com/LinguistCode/a-linguists-obsidian */
+
 .indentheaders .markdown-preview-view h1,
 .cm-s-obsidian .HyperMD-header-1 {
     margin-left: 0;
