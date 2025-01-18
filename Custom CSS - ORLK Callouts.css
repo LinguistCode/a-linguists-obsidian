@@ -1,10 +1,10 @@
-/*
-author: Orelink
-*/
+/* Custom Callouts for Obsidian */
+/* Made by: LinguistCode on github.com/LinguistCode/a-linguists-obsidian */
+
 
 [data-callout="introtext"] {
     background-color: transparent;
-    border-bottom: transparent !important;
+    border: transparent !important;
   }
 
 [data-callout="introtext"] .callout-title {
@@ -13,9 +13,16 @@ author: Orelink
     text-decoration: italic !important;
   }
 
+[data-callout=redline] {
+  border: 2px rgb(214, 10, 78) solid !important;
+  background: transparent !important;
+}
 
+[data-callout=redline] .callout-title {
+color: rgb(214, 10, 78);
+}
 
-/* Modified Asides from ITS theme */
+/* Modified Asides from ITS theme by SIRvb : https://publish.obsidian.md/slrvb-docs/ITS+Theme/Callout+Adjustments */
 
 /* 1 - Navigation aside  */
 .callout[data-callout~=navaside] {
