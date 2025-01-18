@@ -1,14 +1,13 @@
-/*
-author: Orelink
-Style of Author Notes
-*/
+/* Style of Author Notes for Obsidian */
+/* Made by: LinguistCode on github.com/LinguistCode/a-linguists-obsidian */
+
 
 .authorstyle h1, h2 {
     text-shadow: 3px 3px 5px rgb(26, 26, 26);
     color: rgb(44, 76, 255);
 }
 
-
+/* Unlike most notes, Author Notes display the inline title (the name of the file) */
 .authorstyle .inline-title {
     text-align: center !important;
     text-shadow: 3px 3px 5px rgb(26, 26, 26) !important;
