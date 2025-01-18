@@ -1,5 +1,5 @@
 ---
-icon: IbAcademicBook
+icon: RiArticleLine
 aliases:
 - "{%- if creators -%}
         {{creators[0].lastName or creators[0].name }}
@@ -41,7 +41,7 @@ cssclass: litnote
 > [!cite]- 
 > {{bibliography}}
 
->[!zoterometa]- Literature Metadata
+>[!zoterometa]- Info : 🔗 [**Zotero**]({{desktopURI}}){% if DOI %} | [**DOI**](https://doi.org/{{DOI}}){% endif %}
 >
 >**Related**: {% for relation in relations %} {{relation.creators[0].lastName}} *{{relation.title}}* {% if not loop.last  %}{% if not loop.first  %}; {% endif%}{% endif%} {% endfor %}
 > 
@@ -90,25 +90,24 @@ cssclass: litnote
 > 
 > **Reading-time**:: {% if readingTime < 1 %}{{(readingTime * 60) | round + " minutes"}}{% else %}{{readingTime | round(3) + " hours"}}{% endif %}{% endif %}
 
-> [!link]- Links :  [**Zotero**]({{desktopURI}}){% if DOI %} | [**DOI**](https://doi.org/{{DOI}}){% endif %}
+
+> [!link]-  Links: 🔗 [**Zotero**]({{desktopURI}}){% if DOI %} | [**DOI**](https://doi.org/{{DOI}}){% endif %}
 > {%- for attachment in attachments | filterby("path", "endswith", ".pdf") %}
 >  [{{attachment.title}}](file://{{attachment.path | replace(" ", "%20")}})  {%- endfor -%}.
 >  
 
 > [!abstract]-
-> {%- if abstractNote %}
-> {{abstractNote}}
-> {%- endif -%}.
+>{% if abstractNote %}  
+>{{abstractNote|replace("\n","\n>")|striptags(true)|replace("Objectives", "**Objectives**")|replace("Background", "**Background**")|replace("Methodology", "**Methodology**")|replace("Results","**Results**")|replace("Conclusion","**Conclusion**")|replace("Hypothesis","**Hypothesis**")}}  
+>{% endif %}
 > 
 
----
+# :RiListView: Key Points & Takeaways
 
-# :RiListView: Summary
-{% persist "notes" -%}  
-{%- if isFirstImport %}
 
 
 # :RiStickyNoteFill: Notes
+
 {%- set headingRegex = r/^#+/ -%}
 {%- set titleRegex = r/^#+.*/ -%}
 {%- set lineRegex = r/^.*$/m %}
@@ -128,8 +127,6 @@ cssclass: litnote
 {%- endfor -%}{%- endif %}
 
 
-{% endif %}{% endpersist %}
-
 # :FasBookOpenReader: Annotations
 
 >[!thinkaside|right title]- Color Code
@@ -142,32 +139,89 @@ cssclass: litnote
 > <span style="background:rgba(136, 49, 204, 0.2)">Magenta : Pas d'accord, j'ai des contre-arguments OU je ne comprends pas</span>
 ><span style="background:rgba(140, 140, 140, 0.12)">Gris : Me fait penser à autre chose, pas vraiment en lien avec le passage ou non pertinent pour la these directement.</span>
 
-{%- macro calloutHeader(type, color, colorCategory) -%}
-{%- if type == "highlight" -%}>[!zotquote|{{colorCategory}}] :TiInfoHexagon: Quote
-{%- endif -%}
-{%- if type == "underline" -%}>[!zotquote|{{colorCategory}}] :FiUnderline: Quote {%- endif -%}
-{%- if type == "text" -%}>[!zotquote|text] :IbText2: On-file annotation
-{%- endif -%}  
+{% set colorValueMap = {
+    "#2ea8e5": {
+        "colorCategory": "Blue",
+        "heading": ":IbAcademicBook: Ref ",
+        "symbol": "@"
+    },
+    "#5fb236": {
+        "colorCategory": "Green",
+        "heading": " :TiArrowBigRightLine: Made me think of ... ",
+        "symbol": "$"
+    },
+    "#ffd400": {
+        "colorCategory": "Yellow",
+        "heading": " :FarLightbulb: Interesting",
+        "symbol": "&"
+    },
+    "#f19837": {
+        "colorCategory": "Orange",
+        "heading": " :OcChevronRight24: Secondary",
+        "symbol": "?"
+    },
+    "#a28ae5": {
+        "colorCategory": "Purple",
+        "heading": " :TiChartDots3: Concepts and frameworks",
+        "symbol": "~"
+    },
+    "#e56eee": {
+        "colorCategory": "Magenta",
+        "heading": " :CoStopSign: Disagree / Don't get it",
+        "symbol": "€"
+    },
+	"#ff6666": {
+        "colorCategory": "Red",
+        "heading": " :CoWavyWarning: Important",
+        "symbol": "!"
+    },
+    "#aaaaaa": {
+        "colorCategory": "Gray",
+        "heading": " :TiDotsCircleHorizontal: Hors-thèse / Anecdotique",
+        "symbol": "%"
+    }
+} -%}
 
+{%- macro tagFormatter(annotation) -%}
+    {% if annotation.tags -%}
+        {%- for t in annotation.tags %} #{{ t.tag | replace(r/\s+/g, "-") }}{% if not loop.last %}, {% endif %}{%- endfor %}
+    {%- endif %}
 {%- endmacro -%}
 
 {% persist "annotations" %}
-{% set newAnnotations = annotations | filterby("date", "dateafter", lastImportDate) %}
-{% if newAnnotations.length > 0 %}
+{% set annotations = annotations | filterby("date", "dateafter", lastImportDate) -%}
+{% if annotations.length > 0 %}
+*Imported on [[{{importDate | format("YYYY-MM-DD")}}]] at {{importDate | format("HH:mm")}}*
 
-### Imported on: {{importDate | format("YYYY-MM-DD")}} at {{importDate | format("HH:mm")}}
+{%- set grouped_annotations = annotations | groupby("color") -%}
+{%- for color, colorValue in colorValueMap -%}
+{%- if color in grouped_annotations -%} 
+{%- set annotations = grouped_annotations[color] -%}
+{%- for annotation in annotations -%}
+{%- set citationLink = '[(p. ' ~ annotation.pageLabel ~ ')](' ~ annotation.desktopURI ~ ')' %}
+{%- set tagString = tagFormatter(annotation) %}
 
-{% for a in newAnnotations %}
-{%- set citationLink = '[('~ creators[0].lastName ~' '~ date | format("YYYY")~':'~ a.pageLabel ~ ')](' ~ a.desktopURI ~ ')' %}
+{%- if annotation and loop.first %}
 
-{%- if a.imageRelativePath %}
->[!picture|{{a.colorCategory}}]+ Image {{citationLink}}
->> ![[{{a.imageRelativePath}}]]
-{% if a.hashTags %} >> {{a.hashTags}} {% endif %} 
-{% if a.comment %} > :IbArrowThickRight: **{{a.comment}}**  {% endif %}
+## {{colorValue.heading}} %% fold %%
+{% endif -%}
+
+{%- if annotation.imageRelativePath %}
+> [!picture|{{colorCategory}}]+ Image {{citationLink}}
+> ![[{{annotation.imageRelativePath}}]]{% if annotation.tags %}
+> {{tagString}}{% endif %}{%- if (annotation.comment or []).indexOf("todo ") !== -1 %}
+> - [ ] **{{annotation.comment | replace("todo ", "")}}**{%- elif annotation.comment %}
+> **{{annotation.comment}}**{%- endif %}
+{% elif (annotation.comment or []).indexOf("todo ") !== -1 %}
+- [ ] **{{annotation.comment | replace("todo ", "")}}**:{% if not annotation.annotatedText %} {{citationLink}}{% else %}
+	- {{colorValue.symbol}}  {{annotation.annotatedText | replace(r/\s+/g, " ")}} {{citationLink}}{{tagString}}{% endif -%}
+{% elif annotation.comment %}
+- **{{annotation.comment}}**:{% if not annotation.annotatedText %} {{citationLink}}{% else %}
+	- {{colorValue.symbol}}  {{annotation.annotatedText | replace(r/\s+/g, " ") }} {{citationLink}}{{tagString}}{% endif -%}
+{%- elif annotation.annotatedText %}
+- {{colorValue.symbol}}  {{annotation.annotatedText | replace(r/\s+/g, " ") }} {{citationLink}}{{tagString}}
+{%- endif -%}{%- endfor %}{%- endif -%}
+{% endfor -%}
 {% endif %}
-{% if a.type == "underline" or a.type == "highlight" or a.type == "text" %}
-{{calloutHeader(a.type, a.color, a.colorCategory)}}
-> "{{a.annotatedText}}" {{citationLink}} 
-{% if a.comment %}> :IbArrowThickRight: **{{a.comment}}**  {% endif %}{% if a.hashTags %}>Tags: {{a.hashTags}}{% endif %}
-{% endif %}{% endfor %}{% endif %}{% endpersist %}
+
+{% endpersist %}
