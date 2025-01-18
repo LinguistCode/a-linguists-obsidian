@@ -1,0 +1,15 @@
+.dropcap div:has(h1) {
+    & + div:has(> p) {
+	    & p::first-letter {
+            color: white;
+            background-color: rgb(14, 13, 13);
+            border-radius: 6px;
+            box-shadow: 2px 2px 0 rgb(133, 0, 0);
+            font-size: 250%;
+            padding: 3px 8px;
+            margin-right: 6px;
+            float: left;
+            font-family: "Kingthings Calligraphica","Kings","Quintessential", serif;
+		}
+	}
+}

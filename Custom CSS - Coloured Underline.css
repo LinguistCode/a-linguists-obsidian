@@ -1,0 +1,49 @@
+/* Underline colours by Orelink*/
+/* Meant for use with Zotero Integration, Text Format and Editing Toolbar*/
+
+.uYellow {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #ffd400; }
+
+.uGreen {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #5fb236; }
+
+.uRed {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #ff6666; }
+  
+
+.uBlue {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #2ea8e5; }
+
+.uGray {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #aaaaaa; }
+
+.uOrange {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #f19837; }
+
+.uPurple {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #a28ae5; }
+
+.uMagenta {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #e56eee; }
+
+/* The following are for import from Zotero */
+
+.default-underline {
+  text-decoration: underline;
+  text-decoration-color: rgb(9, 27, 225); /* Use a default color if no color is provided */}

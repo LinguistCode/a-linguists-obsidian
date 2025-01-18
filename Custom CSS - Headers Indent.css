@@ -1,0 +1,30 @@
+/* Retrait progressif des titres dans la vue de prévisualisation. S'active avec CSSCLASS: indentheaders */
+.indentheaders .markdown-preview-view h1,
+.cm-s-obsidian .HyperMD-header-1 {
+    margin-left: 0;
+}
+
+.indentheaders .markdown-preview-view h2,
+.cm-s-obsidian .HyperMD-header-2 {
+    margin-left: 20px;
+}
+
+.indentheaders .markdown-preview-view h3,
+.cm-s-obsidian .HyperMD-header-3 {
+    margin-left: 40px;
+}
+
+.indentheaders .markdown-preview-view h4,
+.cm-s-obsidian .HyperMD-header-4 {
+    margin-left: 60px;
+}
+
+.indentheaders .markdown-preview-view h5,
+.cm-s-obsidian .HyperMD-header-5 {
+    margin-left: 80px;
+}
+
+.indentheaders .markdown-preview-view h6,
+.cm-s-obsidian .HyperMD-header-6 {
+    margin-left: 100px;
+}

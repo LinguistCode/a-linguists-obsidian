@@ -1,0 +1,15 @@
+/*
+author: Orelink
+Displays the title of the note inline
+*/
+
+
+
+.displaytitle .inline-title {
+    text-align: center !important;
+    text-shadow: 3px 3px 5px rgb(26, 26, 26) !important;
+    font-size: 2em !important;
+    display: block !important;
+    margin-top: 10px;
+    font-family: "Cinzel", serif;
+}

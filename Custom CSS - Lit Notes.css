@@ -1,0 +1,143 @@
+/*
+author: Orelink
+meant for use with literature notes imported from Zotero
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+.zheader {
+    display: block; /* Makes the span behave like a block element */
+    font-size: 2.1em; /* Adjust font size to exceed H1 */
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Cinzel", serif;
+    /*color: #239e3b;*/
+    /*border: 3px solid rgb(63, 63, 63);*/
+    color: antiquewhite;
+    border: 1px solid #239e3b;
+    background-color: #239e3b;
+    border-radius: 25px;
+    padding: 6px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.litnote {
+  --list-spacing: 0.3em; /* default 0.075em; */
+}
+
+.litnote h1 {
+  text-shadow: 3px 3px 5px rgb(26, 26, 26);
+}
+
+
+/*--------------------------------------------------------------------*/
+/*------- Callout Definitions for Zotero Integration Template ------- */
+
+/*-----zotquote callout base definition------*/
+/**/.callout[data-callout="zotquote"] {   /**/
+/**/  --callout-color: 33, 255, 237;     /**/
+/**/}                                   /**/
+
+
+/*--- Text annotation subtype callout ---*/
+.litnote .callout[data-callout-metadata *="text"] .callout-title {
+  color: rgb(16, 184, 206) !important;
+  background: transparent !important;
+}
+
+.litnote .callout[data-callout-metadata *="text"] {
+  border: 1px solid rgb(16, 184, 206) !important;
+  background: transparent !important;
+}
+
+/*----- ColorCategories definitions for Hightlight and Underline callout -----*/
+
+/*----- Yellow -----*/
+.litnote .callout[data-callout-metadata *="Yellow"] {
+  border: 1px solid rgb(221, 207, 78) !important;
+  background: transparent !important;
+}
+
+.litnote .callout[data-callout-metadata *="Yellow"] .callout-title {
+  color: rgb(221, 207, 78) !important;
+}
+
+/*----- Red -----*/
+
+.litnote .callout[data-callout-metadata *="Red"] {
+  border: 1px solid rgb(170, 29, 29) !important;
+  background: transparent !important;
+}
+
+.litnote .callout[data-callout-metadata *="Red"] .callout-title {
+  color: rgb(170, 29, 29) !important;
+  text-decoration: bold !important;
+}
+
+/*----- Green -----*/
+
+.litnote .callout[data-callout-metadata *="Green"] {
+  border: 1px solid rgb(12, 156, 19) !important;
+  background: transparent !important;
+}
+
+.litnote .callout[data-callout-metadata *="Green"] .callout-title {
+  color: rgb(12, 156, 19) !important;
+}
+
+/*----- Blue -----*/
+
+.litnote .callout[data-callout-metadata *="Blue"] {
+  border: 1px solid rgb(34, 71, 194) !important;
+  background: transparent !important;
+}
+
+.litnote .callout[data-callout-metadata *="Blue"] .callout-title {
+  color: rgb(34, 71, 194) !important;
+}
+
+/*----- Purple -----*/
+.litnote .callout[data-callout-metadata *="Purple"] {
+  border: 1px solid rgb(100, 17, 168) !important;
+  background: transparent !important;
+}
+
+.litnote .callout[data-callout-metadata *="Purple"] .callout-title {
+  color: rgb(100, 17, 168) !important;
+}
+
+/*----- Magenta -----*/
+.litnote .callout[data-callout-metadata *="Magenta"] {
+  border: 1px solid rgb(160, 43, 131) !important;
+  background: transparent !important;
+}
+
+.litnote .callout[data-callout-metadata *="Magenta"] .callout-title {
+  color: rgb(160, 43, 131) !important;
+}
+
+
+/*----- Orange -----*/
+
+.litnote .callout[data-callout-metadata *="Orange"] {
+  border: 1px solid rgb(228, 151, 37) !important;
+  background: transparent !important;
+}
+
+.litnote .callout[data-callout-metadata *="Orange"] .callout-title {
+  color: rgb(228, 151, 37) !important;
+}
+
+
+/*----- Gray -----*/
+.litnote .callout[data-callout-metadata *="Gray"] {
+  border: 1px solid rgb(161, 162, 199) !important;
+  background: transparent !important;
+}
+
+.litnote .callout[data-callout-metadata *="Gray"] .callout-title {
+  color: rgb(161, 162, 199) !important;
+}
+
+/*--------------------------------------------------------------------*/

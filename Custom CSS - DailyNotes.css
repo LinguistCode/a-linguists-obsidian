@@ -1,0 +1,35 @@
+/*
+author: Orelink
+Style of Daily Notes
+*/
+
+.dailynote h1, h2 {
+    text-shadow: 3px 3px 5px rgb(26, 26, 26);
+}
+
+
+.dailynote .embed-title {
+    display: none !important;
+}
+
+/*----- Special outlined callout for Daily note -----*/
+
+.dailynote .callout.callout.callout.callout:is([data-callout=tasklist]) {
+  border: 1px rgb(207, 107, 12) solid !important;
+  background: transparent !important;
+  
+}
+
+.dailynote .callout.callout.callout.callout:is([data-callout=tasklist]) .callout-title {
+color: rgb(207, 107, 12);
+}
+
+.dailynote .callout.callout.callout.callout:is([data-callout=urgent]) {
+  border: 1px rgb(214, 10, 78) solid !important;
+  background: transparent !important;
+  
+}
+
+.dailynote .callout.callout.callout.callout:is([data-callout=urgent]) .callout-title {
+color: rgb(214, 10, 78);
+}

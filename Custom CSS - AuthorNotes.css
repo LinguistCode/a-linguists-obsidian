@@ -1,0 +1,24 @@
+/*
+author: Orelink
+Style of Author Notes
+*/
+
+.authorstyle h1, h2 {
+    text-shadow: 3px 3px 5px rgb(26, 26, 26);
+    color: rgb(44, 76, 255);
+}
+
+
+.authorstyle .inline-title {
+    text-align: center !important;
+    text-shadow: 3px 3px 5px rgb(26, 26, 26) !important;
+    color: rgb(44, 76, 255) !important;
+    font-size: 2em !important;
+    display: block !important;
+    margin-top: 10px;
+    font-family: "Cinzel", serif;
+}
+
+.authorstyle .internal-link {
+    color: rgb(44, 76, 255);
+}

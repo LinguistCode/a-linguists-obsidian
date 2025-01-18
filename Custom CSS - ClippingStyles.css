@@ -1,0 +1,99 @@
+/*
+author: Orelink
+Styles for clippings, depending on type : web, telegram and chat gpt
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.chatgptstyle h1, .chatgptstyle h2 {
+    text-shadow: 3px 3px 5px rgb(26, 26, 26);
+    color: rebeccapurple;
+    font-family: Courier New, Courier, monospace;
+}
+
+.chatgptstyle h1 {
+    text-align: center;
+}
+
+.chatgptstyle h3, .chatgptstyle h4 {
+    text-shadow: 3px 3px 5px rgb(26, 26, 26);
+    color: mediumpurple;
+    font-family: Courier New, Courier, monospace;
+}
+
+.chatgptstyle h5, .chatgptstyle h6 {
+    color: purple;
+    font-family: Courier New, Courier, monospace;
+}
+
+
+.chatgptstyle .embed-title {
+    display: none !important;
+}
+
+.chatgptstyle .internal-link {
+    color: rebeccapurple;
+}
+
+.firefoxstyle h1, .firefoxstyle h2 {
+    text-shadow: 3px 3px 5px rgb(26, 26, 26);
+    color: orangered;
+    font-family: Tomorrow, serif;
+}
+
+.firefoxstyle h1 {
+    text-align: center;
+}
+
+.firefoxstyle h3, .firefoxstyle h4 {
+    text-shadow: 3px 3px 5px rgb(26, 26, 26);
+    color: orange;
+    font-family: Tomorrow;
+}
+
+.firefoxstyle h5, .firefoxstyle h6 {
+    color: darkorange;
+    font-family: Tomorrow;
+}
+
+
+.firefoxstyle .embed-title {
+    display: none !important;
+}
+
+.firefoxstyle .internal-link {
+    color: orangered;
+}
+
+
+
+.telegramstyle h1, .telegramstyle h2 {
+    text-shadow: 3px 3px 5px rgb(26, 26, 26);
+    color: darkblue;
+}
+
+.telegramstyle h1 {
+    text-align: center;
+}
+
+.telegramstyle h3, .telegramstyle h4 {
+    text-shadow: 3px 3px 5px rgb(26, 26, 26);
+    color: midnightblue;
+}
+
+.telegramstyle h5, .telegramstyle h6 {
+    color: mediumslateblue;
+}
+
+
+.telegramstyle .embed-title {
+    display: none !important;
+}
+
+.telegramstyle .internal-link {
+    color: darkblue;
+}
