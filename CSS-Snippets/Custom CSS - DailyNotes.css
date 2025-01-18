@@ -1,18 +1,15 @@
-/*
-author: Orelink
-Style of Daily Notes
-*/
+/* Style of Daily Notes */
+/* Made by: LinguistCode on github.com/LinguistCode */
 
 .dailynote h1, h2 {
     text-shadow: 3px 3px 5px rgb(26, 26, 26);
 }
 
-
-.dailynote .embed-title {
+.dailynote .embed-title { /*remove titles from embeds for cleaner integration of Telegram Quick Notes*/
     display: none !important;
 }
 
-/*----- Special outlined callout for Daily note -----*/
+/*----- Special outlined callouts for Daily note tasks -----*/
 
 .dailynote .callout.callout.callout.callout:is([data-callout=tasklist]) {
   border: 1px rgb(207, 107, 12) solid !important;
