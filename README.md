@@ -56,7 +56,7 @@ On top of messaging, I use the Telegram App on my phone to send notes directly t
 - displaytitle -> cssclass to enable the inline display of a note's title above the properties (which is turned off in my Vault)
 - firstletter -> cssclass to enable a stylized drop-cap
 - headersindent -> cssclass to enable the gradual indentation of headers in a note
-- extracallouts -> special callout styles to be used everywhere
+- [extracallouts](https://github.com/LinguistCode/a-linguists-obsidian/Custom%20CSS%20-%20Extra%20Callouts.css) -> special callout styles to be used everywhere
 - widernotes -> different cssclasses to change the width of individual notes
 - justifiednotes -> cssclass to enable justified text
 - niceblockquotes -> a tweak and edit of [AppolloGoneRogue's snippet](https://forum.obsidian.md/t/how-to-achieve-css-code-snippets/8474/244?u) to make it into a toggleable cssclass more fitting to my vault
