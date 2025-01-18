@@ -79,6 +79,8 @@ All of my zotero templates gather the following information and store it in the 
 - Zotero Grouped Template -> A modification of FeralFlora's template that fits my use and orders the annotation by color rather than lineraly.
 
 ### Telegram Sync Templates
+- Quick Notes -> Most of the notes I take on telegram are quick notes. They are automatically inserted in Daily Notes.
+- Refs -> These notes are composed of references I found on the go and are strictly formatted
 
 <footer>
 ---
