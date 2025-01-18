@@ -1,5 +1,7 @@
-/* Underline colours by Orelink*/
-/* Meant for use with Zotero Integration, Text Format and Editing Toolbar*/
+/* Simple color underlines. Made to be used in a Zotero Integration Template,*/
+/* also pairs well with the Text Format and Editing Toolbar plugins*/
+/* Made by: LinguistCode on github.com/LinguistCode/a-linguists-obsidian */
+
 
 .uYellow {
   text-decoration: underline;
@@ -42,8 +44,9 @@
   text-decoration-thickness: 2px;
   text-decoration-color: #e56eee; }
 
-/* The following are for import from Zotero */
+/* The following is for imports from Zotero */
 
 .default-underline {
   text-decoration: underline;
-  text-decoration-color: rgb(9, 27, 225); /* Use a default color if no color is provided */}
+  text-decoration-color: #ffd400; /* Use yellow color if no color is provided */
+}
