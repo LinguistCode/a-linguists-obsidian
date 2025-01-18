@@ -1,9 +1,5 @@
-/*
-author: Orelink
-Displays the title of the note inline
-*/
-
-
+/* Display Inline Title */
+/* Made by: LinguistCode on github.com/LinguistCode/a-linguists-obsidian */
 
 .displaytitle .inline-title {
     text-align: center !important;
