@@ -1,0 +1,15 @@
+/* Justified Note CSSCLASS for Obsidian */
+/* Made by: LinguistCode on https://github.com/LinguistCode/a-linguists-obsidian */
+
+
+/* reading mode */
+.justifytext .markdown-preview-view p {
+	text-align: justify;
+	text-justify: inter-word;	
+}
+
+/* source view and live preview */
+.justifytext .markdown-source-view.mod-cm6 .cm-line {
+	text-align: justify;
+	text-justify: inter-word;	
+}
