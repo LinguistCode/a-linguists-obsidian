@@ -48,18 +48,19 @@ On top of messaging, I use the Telegram App on my phone to send notes directly t
 
 ## Obsidian CSS Snippets
 
+- Author Notes -> Styling options for the recap note that display every publication by a given author and relevant information
+- Clipping Styles -> Styling options for the three types of "clippings" I have in my Vault
+- Coloured Underlines -> styles for coloured underlines, made at first for my Linear Zotero Template.
+- Dailynote -> Styling options for my dailynotes. Includes special callouts. 
+- Display Title -> cssclass to enable the inline display of a note's title above the properties (which is turned off in my Vault)
+- Extra callouts -> special callout styles to be used everywhere, some are derived from [SIRvb's Callout Adjustments](https://publish.obsidian.md/slrvb-docs/ITS+Theme/)
+- Faded Banners -> I use it in conjunction with [SIRvb's](https://publish.obsidian.md/slrvb-docs/ITS+Theme/Image+Adjustments) banners, creates a fading banner at the top of a note taking its full width
+- First Letter -> cssclass to enable a stylized drop-cap
+- Headers Indent -> cssclass to enable the gradual indentation of headers in a note
+- Justified Notes -> cssclass to enable justified text
 - Litnotes -> Styling options for my literature notes, to format what I bring from Zotero
-- authornotes -> Styling options for the recap note that display every publication by a given author and relevant information
-- banners -> Tweaks for [SIRvb's](https://publish.obsidian.md/slrvb-docs/ITS+Theme/Image+Adjustments) banners, i.e. the possibility for them to fade and take the whole width of the note
-- clippingstyles -> Styling options for the three types of "clippings" I have in my Vault
-- dailynote -> Styling options for my dailynotes. Includes special callouts. 
-- displaytitle -> cssclass to enable the inline display of a note's title above the properties (which is turned off in my Vault)
-- firstletter -> cssclass to enable a stylized drop-cap
-- headersindent -> cssclass to enable the gradual indentation of headers in a note
-- [extracallouts](https://github.com/LinguistCode/a-linguists-obsidian/Custom%20CSS%20-%20Extra%20Callouts.css) -> special callout styles to be used everywhere
-- widernotes -> different cssclasses to change the width of individual notes
-- justifiednotes -> cssclass to enable justified text
-- niceblockquotes -> a tweak and edit of [AppolloGoneRogue's snippet](https://forum.obsidian.md/t/how-to-achieve-css-code-snippets/8474/244?u) to make it into a toggleable cssclass more fitting to my vault
+- Nice Blockquotes -> A tweak and edit of [AppolloGoneRogue's snippet](https://forum.obsidian.md/t/how-to-achieve-css-code-snippets/8474/244?u) to make it into a toggleable cssclass more fitting to my vault
+- Wider Notes -> Different cssclasses to change the width of individual notes
 
 
 ## Obsidian Templates
