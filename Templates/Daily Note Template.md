@@ -13,7 +13,11 @@ cssclasses:
 >[!tracker]+
 > - @ Lectures : `=this.daily-reading`
 > - -w Rédaction :  `=this.daily-writing`
-> - Autre : 
+> - Autre :  ```tasks
+> done <%tp.date.now("YYYY-MM-DD")%>
+> hide due date
+> hide scheduled date
+> ```
 
 >[!column|no-t]
 >
@@ -42,20 +46,9 @@ cssclasses:
 
 <br>
 
-## Thoughts
+## Scratch Pad
 
-*Not a single recorded thought today*
-
-
-## Here's what you checked today : 
-
- ```tasks
- done <%tp.date.now("YYYY-MM-DD")%>
- hide due date
- hide scheduled date
- ```
-
-> *Well done !*
+*Scribble things here*
 
 
 
