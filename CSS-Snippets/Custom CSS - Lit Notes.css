@@ -1,7 +1,5 @@
-/*
-author: Orelink
-meant for use with literature notes imported from Zotero
-*/
+/* Style for Literature Notes - meant for use with literature notes imported from Zotero */
+/* Made by: LinguistCode on github.com/LinguistCode/a-linguists-obsidian */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
@@ -35,9 +33,9 @@ meant for use with literature notes imported from Zotero
 /*------- Callout Definitions for Zotero Integration Template ------- */
 
 /*-----zotquote callout base definition------*/
-/**/.callout[data-callout="zotquote"] {   /**/
-/**/  --callout-color: 33, 255, 237;     /**/
-/**/}                                   /**/
+.callout[data-callout="zotquote"] {  
+ --callout-color: 33, 255, 237;     
+}                                 
 
 
 /*--- Text annotation subtype callout ---*/
