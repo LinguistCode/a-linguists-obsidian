@@ -1,0 +1,14 @@
+/* Changes the note's width - Obsidian default is 700px -*/ 
+/*Made by : LinguistCode on github.com/LinguistCode/a-linguists-obsidian */
+
+body { /* For larger notes by default */
+    --file-line-width: 900px;  
+  }
+
+.narrownote { /*the old default width is now narrow*/
+  --file-line-width: 700px;  
+}
+
+.widestnote { /*for notes that require more width*/
+  --file-line-width: 1100px;  
+}
